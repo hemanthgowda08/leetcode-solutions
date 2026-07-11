@@ -7,13 +7,12 @@ class Solution(object):
     def oddEvenList(self, head):
         if head is None or head.next is None :
             return head
-        
         odd = head
         even = head.next
-        even_head = even
+        even_head = head.next
+        
 
         while even and even.next :
-            
             odd.next = odd.next.next
             odd = odd.next
             even.next = even.next.next
@@ -23,3 +22,9 @@ class Solution(object):
 
         return head
 
+        
+
+
+                       
+
+            
