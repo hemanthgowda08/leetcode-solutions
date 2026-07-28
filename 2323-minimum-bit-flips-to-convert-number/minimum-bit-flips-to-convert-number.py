@@ -3,8 +3,7 @@ class Solution(object):
         ans = start ^ goal
         count = 0
 
-        while ans:
-            ans &= (ans - 1)
-            count += 1
-
+        for i in range(0, 32):
+            if ans & (1 << i) != 0 :
+                count += 1
         return count
