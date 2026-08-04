@@ -1,6 +1,5 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-
         seen = set()
 
         for num in nums :
@@ -10,3 +9,6 @@ class Solution(object):
             seen.add(num)
 
         return False
+
+        
+
